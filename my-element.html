@@ -1,0 +1,15 @@
+<element name="my-element" attributes="hoge">
+  <template>
+    <div>
+      <span>I'm <b>tk-element</b>. This is my Shadow DOM.</span>
+      <button on-click="delete">{{ hoge }}</button>
+    </div>
+  </template>
+  <script>
+    Polymer.register(this,
+    {
+    "delete": function () { alert(this.hoge) },
+    }
+    );
+  </script>
+</element>
